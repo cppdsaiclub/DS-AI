@@ -13,6 +13,7 @@ import BadgesContent from './BadgesContent';
 import DatathonContent from './DatathonContent';
 import OracleTripContent from './OracleTripContent';
 import KaggleContent from './KaggleContent';
+import AdvisorContent from './AdvisorContent';
 
 const Resources = () => {
     const [value, setValue] = useState(0);
@@ -103,7 +104,8 @@ const Resources = () => {
         { label: 'Digital Badges', key: 'badges' },
         { label: 'Datathon', key: 'datathon' },
         { label: 'Oracle Trip', key: 'oracle' },
-        { label: 'Kaggle', key: 'kaggle' }
+        { label: 'Kaggle', key: 'kaggle' },
+        { label: 'Advisors', key: 'advisors' }
     ];
 
     const containerVariants = {
@@ -136,9 +138,9 @@ const Resources = () => {
     };
 
     return (
-        <Box sx={{ py: 9, pt: (categories[value].key === 'datathon' || categories[value].key === 'badges' || categories[value].key === 'oracle' || categories[value].key === 'kaggle') ? 12 : 9, backgroundColor: '#0a192f' }}>
+        <Box sx={{ py: 9, pt: (categories[value].key === 'datathon' || categories[value].key === 'badges' || categories[value].key === 'oracle' || categories[value].key === 'kaggle' || categories[value].key === 'advisors') ? 12 : 9, backgroundColor: '#0a192f' }}>
             <Container maxWidth="lg">
-                {categories[value].key !== 'datathon' && categories[value].key !== 'badges' && categories[value].key !== 'oracle' && categories[value].key !== 'kaggle' && (
+                {categories[value].key !== 'datathon' && categories[value].key !== 'badges' && categories[value].key !== 'oracle' && categories[value].key !== 'advisors' && (
                     <Box sx={{ textAlign: 'center', mb: { xs: 3, sm: 3.5, md: 4 } }}>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}
@@ -179,6 +181,8 @@ const Resources = () => {
                             <OracleTripContent />
                         ) : categories[value].key === 'kaggle' ? (
                             <KaggleContent />
+                        ) : categories[value].key === 'advisors' ? (
+                            <AdvisorContent />
                         ) : categories[value].key === 'badges' ? (
                             <BadgesContent />
                         ) : (
