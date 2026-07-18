@@ -28,10 +28,7 @@ import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 import VerifiedIcon from '@mui/icons-material/Verified';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
-<<<<<<< Updated upstream
 import BarChartIcon from '@mui/icons-material/BarChart';
-=======
->>>>>>> Stashed changes
 import SchoolIcon from '@mui/icons-material/School';
 
 const Navbar = () => {
@@ -61,10 +58,7 @@ const Navbar = () => {
         { label: 'Digital Badges', icon: <VerifiedIcon sx={{ fontSize: 20 }} />, path: '/resources?tab=badges' },
         { label: 'Datathon', icon: <EmojiEventsIcon sx={{ fontSize: 20 }} />, path: '/resources?tab=datathon' },
         { label: 'Oracle Trip', icon: <DirectionsCarIcon sx={{ fontSize: 20 }} />, path: '/resources?tab=oracle' },
-<<<<<<< Updated upstream
         { label: 'Kaggle', icon: <BarChartIcon sx={{ fontSize: 20 }} />, path: '/resources?tab=kaggle' },
-=======
->>>>>>> Stashed changes
         { label: 'Advisors', icon: <SchoolIcon sx={{ fontSize: 20 }} />, path: '/resources?tab=advisors' },
     ];
 
