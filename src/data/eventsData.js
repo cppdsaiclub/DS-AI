@@ -4,33 +4,49 @@ import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import { parseEventDateTime } from '../utils/eventHelpers';
 
 export const upcomingEvents = [
-    {
-        id: 'cs-club-winter-wonderland-dec3',
-        title: 'CS Club’s Winter Wonderland',
-        date: 'December 3, 2025',
-        time: '5:30 PM - 8:00 PM',
-        location: 'BSC Ursa Minor',
-        type: 'Social',
-        iconType: 'GroupIcon',
-        image: '/csclub-winterwonderland.png',
-        description: 'Step into the holiday season with us at CS Winter Wonderland. This end-of-semester hangout brings together the CS clubs for movies, games, activities, snacks, and good company.',
-        registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLScFb-MLt0hdgzeS0jL5eNU_607IN5MmFAdboVe-fNLc2tz19w/viewform'
-    },
-    {
-        id: 'kaggle-presentations-dec4',
-        title: 'Kaggle Presentations',
-        date: 'December 4, 2025',
-        time: '12:00 PM - 1:00 PM',
-        location: 'Building 3, Room 2636',
-        type: 'General Meeting',
-        iconType: 'SchoolIcon',
-        image: '/gm14-kagglepresentations.png',
-        description: "Watch how our Kaggle teams transformed data into discovery! Join us for their presentations and learn how to get involved in next year's team.",
-        registrationLink: '#'
-    }
+    
 ];
 
 export const pastEvents = [
+    {
+        id: 'andackathon-spring26',
+        title: 'AnDackathon Datathon',
+        date: 'April 13 – 18, 2026',
+        time: 'April 13 – April 18, 2026',
+        location: 'Oracle Corporation, CA',
+        type: 'Datathon',
+        iconType: 'EmojiEventsIcon',
+        image: '/andackathon_spring26.png',
+        description: "The AnDackathon challenges teams to use data to defend decisions, compare models, and solve real-world problems — all in tandem with the AnDOUC Summit for industry context. Participating students get a FREE trip to Oracle HQ: lodging, conference fee, and competition fee all covered. Prizes included!",
+        registrationLink: '#',
+        semester: "Spring '26"
+    },
+    {
+        id: 'ai-fair-2026',
+        title: 'AI Fair 2026',
+        date: 'April 16, 2026',
+        time: '9:00 AM - 2:00 PM',
+        location: 'BSC, Ursa Major — Cal Poly Pomona',
+        type: 'Special Event',
+        iconType: 'EmojiEventsIcon',
+        image: '/AI-fair_spring26.png',
+        description: "Designing Tomorrow with AI, for Everyone. Join us at the AI Fair 2026 at Cal Poly Pomona! Make sure to check out DS&AI's showcase of a recreated Google Quick Draw tool. Register and don't miss out!",
+        registrationLink: '#',
+        semester: "Spring '26"
+    },
+    {
+        id: 'aws-ec2-essentials-mar26',
+        title: 'AWS Cloud Clubs: EC2 Essentials',
+        date: 'March 26, 2026',
+        time: '12:00 PM - 1:00 PM',
+        location: 'Building 163, Room 1020',
+        type: 'General Meeting',
+        iconType: 'SchoolIcon',
+        image: '/gm8-aws-EC2-essentials_spring26.png',
+        description: "AWS Cloud Club Meeting #3 — learn about EC2 and how to power your cloud engine by spinning up virtual machines in the cloud. A hands-on session presented by AWS Cloud Club @ CPP!",
+        registrationLink: '#',
+        semester: "Spring '26"
+    },
     {
         id: 'yapping-points-social-mar26',
         title: 'Yapping Points: Plot Twist',
@@ -71,18 +87,6 @@ export const pastEvents = [
         semester: "Spring '26"
     },
     {
-        id: 'sql-workshop-nov13',
-        title: 'SQL Workshop',
-        date: 'November 13, 2025',
-        time: '12:00 PM - 1:00 PM',
-        location: 'Building 8, Room 302',
-        type: 'General Meeting',
-        iconType: 'SchoolIcon',
-        image: '/gm12-sql.png',
-        description: 'Sharpen your database skills with a guided walkthrough of core SQL concepts, live query demos, and collaborative practice problems you can take back to your projects.',
-        registrationLink: '#'
-    },
-    {
         id: 'exploring-linux-mar5',
         title: 'Exploring the Linux Environment',
         date: 'March 5, 2026',
@@ -120,18 +124,6 @@ export const pastEvents = [
         description: "Continue building your ML skills! Part two of our model-from-scratch series.",
         registrationLink: '#',
         semester: "Spring '26"
-    },
-    {
-        id: 'data-royale-datathon',
-        title: 'Data Royale Datathon',
-        date: 'November 10-14, 2025',
-        time: 'Opening - Nov 11 @ 9 AM',
-        location: 'BSC Ursa Minor',
-        type: 'Datathon',
-        iconType: 'EmojiEventsIcon',
-        image: '/cr_datathon1.png',
-        description: 'Join us for Data Royale, our semiannual 5-day datathon where competition meets learning! Whether you\'re a beginner or seasoned data scientist, compete with teams on analyzing and gaining insights on a given dataset, learn from industry professionals, and clash your way to become the data champion!',
-        registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSf7iKnOXf9E-PHIct8TEfXrnomIQzqF2ZZeaI8DEmLSGVp6GA/viewform'
     },
     {
         id: 'board-games-study-social-ii-feb19',
