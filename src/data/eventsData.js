@@ -32,54 +32,6 @@ export const upcomingEvents = [
 
 export const pastEvents = [
     {
-        id: 'board-games-study-dec1',
-        title: 'Board Games + Study',
-        date: 'December 1, 2025',
-        time: '5:30 PM - 8:00 PM',
-        location: 'Building 3, Room 2636',
-        type: 'Social',
-        iconType: 'GroupIcon',
-        image: '/social11-games&study.png',
-        description: 'Bring homework, grab a game, and unwind with friends before finals.',
-        registrationLink: '#'
-    },
-    {
-        id: 'picnic-games-nov24',
-        title: 'Picnic and Games',
-        date: 'November 24, 2025',
-        time: '5:30 PM - 8:00 PM',
-        location: 'TBA',
-        type: 'Social',
-        iconType: 'GroupIcon',
-        image: '/social10-picnic.png',
-        description: 'Pack a blanket, grab some friends, and wind down with lawn games, snacks, and DS&AI community vibes.',
-        registrationLink: '#'
-    },
-    {
-        id: 'interview-prep-nov20',
-        title: 'Interview Prep',
-        date: 'November 20, 2025',
-        time: '12:00 PM - 1:00 PM',
-        location: 'Building 3, Room 2636',
-        type: 'General Meeting',
-        iconType: 'SchoolIcon',
-        image: '/gm13-interviewprep.png',
-        description: 'Join us for our meeting covering interview preparation. Learn how to succeed in interviews, develop a portfolio, highlight strengths, and get the job you want!',
-        registrationLink: '#'
-    },
-    {
-        id: 'volleyball-social-nov17',
-        title: 'Volleyball Social',
-        date: 'November 17, 2025',
-        time: '5:30 PM - 8:00 PM',
-        location: 'BRIC Court 1 (MAC)',
-        type: 'Social',
-        iconType: 'GroupIcon',
-        image: '/social9-volleyball.png',
-        description: "Bump, set, hang out! It's volleyball night with DS&AI!",
-        registrationLink: '#'
-    },
-    {
         id: 'yapping-points-social-mar26',
         title: 'Yapping Points: Plot Twist',
         date: 'March 26, 2026',
@@ -233,9 +185,6 @@ export const pastEvents = [
         registrationLink: '#',
         semester: "Spring '26"
     },
-];
-
-export const pastEvents = [
     {
         id: 'spring-intro-meeting-jan22',
         title: 'Spring Intro Meeting',

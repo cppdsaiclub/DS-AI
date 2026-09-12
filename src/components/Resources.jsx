@@ -140,7 +140,7 @@ const Resources = () => {
     return (
         <Box sx={{ py: 9, pt: (categories[value].key === 'datathon' || categories[value].key === 'badges' || categories[value].key === 'oracle' || categories[value].key === 'kaggle' || categories[value].key === 'advisors') ? 12 : 9, backgroundColor: '#0a192f' }}>
             <Container maxWidth="lg">
-                {categories[value].key !== 'datathon' && categories[value].key !== 'badges' && categories[value].key !== 'oracle' && categories[value].key !== 'advisors' && (
+                {categories[value].key !== 'datathon' && categories[value].key !== 'badges' && categories[value].key !== 'oracle' && categories[value].key === 'kaggle' && categories[value].key !== 'advisors' && (
                     <Box sx={{ textAlign: 'center', mb: { xs: 3, sm: 3.5, md: 4 } }}>
                         <motion.div
                             initial={{ opacity: 0, y: 20 }}

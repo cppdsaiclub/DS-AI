@@ -16,8 +16,8 @@ const AdvisorContent = () => {
     const advisors = [
         { 
             name: 'Dr. Ericcson Santa Marin',
-            image: '/MeganWeb.JPG', //placeholder
-            message: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+            image: '/MarinProfile.png',
+            message: 'Ericcson Santa Marin is an Assistant Professor in the Computer Science Department at California State Polytechnic University - Pomona (Cal Poly Pomona). He earned a B.S. in Computer Science from Pontifical Catholic University of Goias, Brazil (2001), an especialization in Software Quality Assurance and Management from Pontifical Catholic University of Goias, Brazil (2013), a M.S. in Computer Science from Federal University of Goias, Brazil (2013), and a Ph.D. in Computer Science from Arizona State University, USA (2020), where he proposed a hacker-centric perspective to empower cyber-defense. After defending his Ph.D. dissertation in April 2020, he joined Cal Poly Pomona in Fall 2020. He has also worked from 2001 until 2010 in his own software factory Marin Solutions, where his team designed custom-built, requirements-oriented, high-performance software solutions for different type of companies.',
             research: {
                 focus: 'AI for Threat Intelligence (ATI)',
                 opportunities: 'CALSys Lab',
@@ -25,7 +25,6 @@ const AdvisorContent = () => {
             },
             contact: {
                 email: 'santanamarin@cpp.edu',
-                hours: 'M W | 2:30 PM - 3:30 PM | 5:30 PM - 6:30 PM',
                 location: 'Building 8-39',
                 phone: '909-869-3909',
             },
@@ -38,32 +37,30 @@ const AdvisorContent = () => {
         },
         {
             name: 'John Korah',
-            image: '',
-            message: '',
+            image: 'KorahProfile.png',
+            message: 'John Korah is an Assistant Professor with the Department of Computer Science at Cal Poly Pomona. He received his Ph.D. in Computer Science from Virginia Tech, M.S. in Electrical Engineering and B.E. in Electronics and Instrumentation Engineering - Government College of Technology Coimbatore, India.',
             research: {
-                focus: '',
-                opportunities: '',
-                researchLink: '',
+                focus: 'High Performance Computing, Health Policy Modeling, Big Data Analytics, Cyber Security, Computational Social Systems, Performance Modeling & Analysis',
+                opportunities: 'Contact via email for more information',
+                researchLink: 'Contact via email for research opportunities',
             },
             contact: {
                 email: 'jkorah@cpp.edu',
-                hours: 'M | 1:00 PM - 3:00 PM (ZOOM) W | 1:15 PM - 03:15 PM (ZOOM AND IN PERSON)',
                 location: 'Building 8-15',
                 phone: '909-869-3441',
             },
         },
         {
             name: 'Sai Kosaraju',
-            image: '',
-            message: '',
+            image: 'KosarajuProfile.png',
+            message: 'Sai Kosaraju is an Assistant Professor in the Department of Computer Science at Cal Poly Pomona. He received his Ph.D in Computer Science from University of Nevada, Las Vegas, researching deep learning in healthcare. He earned his M.S. in Computer Science from Kennesaw State University, and Bachelor\'s in Electronics and Communication from GITAM Institute of Technology, Vishakapatnam, India. His work mainly focuses on Deep Learning, specifically Interpretable and Evidential Deep Learning.',
             research: {
-                focus: '',
-                opportunities: '',
-                researchLink: '',
+                focus: 'Health Informatics, Bioinformatics, Machine Learning, Deep Learning',
+                opportunities: 'Contact via email for more information',
+                researchLink: 'Contact via email for research opportunities',
             },
             contact: {
                 email: 'skosaraju@cpp.edu',
-                hours: '',
                 location: 'Building 8-46',
                 phone: '909-869-3542',
             },
@@ -83,10 +80,18 @@ const AdvisorContent = () => {
 
     return (
         <Grid container spacing={4}>
-
+        
         {advisors.map((advisor, index) => (
 
             <Grid item xs={12} md={4} key={index}>
+              <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{
+                duration: 0.6,
+                delay: index * 0.15,
+                ease: "easeOut",
+              }}>
 
             <Box
                 sx={{
@@ -94,45 +99,54 @@ const AdvisorContent = () => {
                 borderRadius: 3,
                 boxShadow: 3,
                 backgroundColor: "background.paper",
-                display: "flex",
-                alignItems: "flex-start",
-                gap: 2,
-                color: "white"  
+                height: "100%", 
+                color: "white"
+                 
                 }}
             >
-              <Box>
-                <Box
-                  component="img"
-                  src={advisor.image}
-                  alt={advisor.name}
-                  sx={{
-                    width: 120,
-                    height: 120,
-                    objectFit: "cover",
-                    borderRadius: 2,
-                  }}
-                />
-              </Box>
-
-                <Box sx={{ flex: 1 }}>
-
-                <Typography variant="h6">
-                    {advisor.name}
-                </Typography>
-
-                <Typography sx={{ mb: 2 }}>
-                    {advisor.message}
-                </Typography>
-
-                <Button onClick={() => handleToggle(index)}>
-                    {openIndex === index ? "Hide Details" : "View Details"}
-                </Button>
-
+              <Box
+                sx={{
+                display: "flex",
+                alignItems: "center",
+                flexDirection: { xs: 'column', md: 'row' },
+                gap: { xs: 3, md: 5 },}}>
+                <Box>
+                  <Box
+                    component="img"
+                    src={advisor.image}
+                    alt={advisor.name}
+                    sx={{
+                      width: 120,
+                      height: 120,
+                      objectFit: "cover",
+                      borderRadius: 2,
+                    }}
+                  />
                 </Box>
 
+                  <Box sx={{ flex: 1 }}>
+
+                  <Typography variant="h6">
+                      {advisor.name}
+                  </Typography>
+
+                  <Typography sx={{ mb: 2 }}>
+                      {advisor.message}
+                  </Typography>
+
+                  <Button onClick={() => handleToggle(index)}>
+                      {openIndex === index ? "Hide Details" : "View Details"}
+                  </Button>
+
+                  </Box>
+                </Box>
                 <Collapse in={openIndex === index}>
 
-                <Box sx={{ mt: 3 }}>
+                <Box sx={{ 
+                  mt: 3,
+                  width: "100%",
+                  overflowWrap: "break-word"
+                }}>
                     
                     <Typography>
                     <strong>Research Focus:</strong> {advisor.research.focus}
@@ -150,6 +164,7 @@ const AdvisorContent = () => {
                 </Collapse>
 
             </Box>
+            </motion.div>
             </Grid>
 
         ))}
