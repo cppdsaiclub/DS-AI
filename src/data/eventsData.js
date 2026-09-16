@@ -5,6 +5,128 @@ import { parseEventDateTime } from '../utils/eventHelpers';
 
 export const upcomingEvents = [
     {
+        id: 'intro-to-deep-learning-sep17',
+        title: 'Intro to Deep Learning',
+        date: 'September 17, 2026',
+        time: '12:00 PM - 1:00 PM',
+        location: 'Building 3, Room 2636',
+        type: 'General Meeting',
+        iconType: 'SchoolIcon',
+        image: '/fall26_gm4-intro_to_deep_learning_w_css.png',
+        description: "Join us in collaboration with CSS for an introductory workshop to deep learning! Whether new to machine learning, or looking to strengthen your knowledge on machine learning, this is a great opportunity to learn!",
+        registrationLink: '#',
+        semester: "Fall '26"
+    },
+    
+
+];
+
+export const pastEvents = [
+    {
+        id: 'intro-to-python-sep10',
+        title: 'Introduction to Python + Libraries',
+        date: 'September 10, 2026',
+        time: '12:00 PM - 1:00 PM',
+        location: 'Building 3, Room 2636',
+        type: 'General Meeting',
+        iconType: 'SchoolIcon',
+        image: '/fall26_gm3-python_libs.webp',
+        description: "Don't know anything about Python, or need a quick refresher? This week we’re going over the basics of the Python programming and some libraries together!",
+        registrationLink: '#',
+        semester: "Fall '26"
+    },
+    {
+        id: 'intro-to-data-science-sep3',
+        title: 'Introduction to Data Science',
+        date: 'September 3, 2026',
+        time: '12:00 PM - 1:00 PM',
+        location: 'Building 3, Room 2636',
+        type: 'General Meeting',
+        iconType: 'SchoolIcon',
+        image: '/fall26_gm2-intro_to_data_science.png',
+        description: "Need a better understanding of what exactly data science is or reinforce your current knowledge of the field? Come to our general meeting!",
+        registrationLink: '#',
+        semester: "Fall '26"
+    },
+    {
+        id: 'kaggle-teams-info-meeting-sep1',
+        title: 'Kaggle Teams Info Meeting',
+        date: 'September 1, 2026',
+        time: '12:00 PM - 1:00 PM',
+        location: 'Building 3, Room 2636',
+        type: 'General Meeting',
+        iconType: 'SchoolIcon',
+        image: '/fall26_kaggle1-first_kaggle_intro_meeting.png',
+        description: "Want to dive even further into data science? Do you want to work with others to solve real-world problems? Join us for our Kaggle Teams Info Meeting and work with like-minded individuals on projects!",
+        registrationLink: '#',
+        semester: "Fall '26"
+    },
+    {
+        id: 'first-general-meeting-aug27',
+        title: 'First General Meeting',
+        date: 'August 27, 2026',
+        time: '12:00 PM - 1:00 PM',
+        location: 'Building 3, Room 2636',
+        type: 'General Meeting',
+        iconType: 'SchoolIcon',
+        image: '/fall26_gm1-first_gen_meeting.png',
+        description: "Join us this week as we go over who we are, what we do, and meet you all for our first general meeting of the semester!",
+        registrationLink: '#',
+        semester: "Fall '26"
+    },
+    {
+        id: 'meet-the-new-board-may7',
+        title: 'Meet the New Board',
+        date: 'May 7, 2026',
+        time: '12:00 PM - 1:00 PM',
+        location: 'Building 3, Room 2636',
+        type: 'General Meeting',
+        iconType: 'SchoolIcon',
+        image: '/spring26_gm11-meet_the_new_board.png',
+        description: "Join us for our last general meeting this Thursday as we introduce the new board members for DS&AI!",
+        registrationLink: '#',
+        semester: "Spring '26"
+    },
+    {
+        id: 'cs-beach-social-may3',
+        title: 'CS Beach Social',
+        date: 'May 3, 2026',
+        time: '12:00 PM - 1:00 PM',
+        location: 'Balboa Beach',
+        type: 'Social',
+        iconType: 'GroupIcon',
+        image: '/spring26_social4-cs_beach_social.png',
+        description: "We\'re teaming up with MISSA, SheCodes, CSS, and more for a joint beach social. Come out and join us for a fun evening bonfire, food, and games!",
+        registrationLink: '#',
+        semester: "Spring '26"
+    },
+    {
+        id: 'ai-industry-keynote-apr30',
+        title: 'AI & The Industry Keynote',
+        date: 'April 30, 2026',
+        time: '12:00 PM - 1:00 PM',
+        location: 'Building 3, Room 2636',
+        type: 'General Meeting',
+        iconType: 'SchoolIcon',
+        image: '/spring26_gm10-nick_ai_industry_keynote.png',
+        description: "Want to hear more about AI and the overall industry? Join us for a keynote talk with a board member to learn more about AI and how it is being used in the tech industry.",
+        registrationLink: '#',
+        semester: "Spring '26"
+    },
+    {
+        id: 'resume-help-apr23',
+        title: 'Resume Help',
+        date: 'April 23, 2026',
+        time: '12:00 PM - 1:00 PM',
+        location: 'Building 3, Room 2636',
+        type: 'General Meeting',
+        iconType: 'SchoolIcon',
+        image: '/spring26_gm9-resume_help_flyer.png',
+        description: "Need help tuning your resume to be better? Join us in collaboration with CSS for a resume help session where we will go over the basics of resume building and provide feedback on your resumes. Bring your resume and get ready to improve it!",
+        registrationLink: '#',
+        semester: "Spring '26"
+    },
+    {
         id: 'andackathon-spring26',
         title: 'AnDackathon Datathon',
         date: 'April 13 – 18, 2026',
@@ -173,9 +295,6 @@ export const upcomingEvents = [
         registrationLink: '#',
         semester: "Spring '26"
     },
-];
-
-export const pastEvents = [
     {
         id: 'spring-intro-meeting-jan22',
         title: 'Spring Intro Meeting',
