@@ -5,6 +5,24 @@ import { parseEventDateTime } from '../utils/eventHelpers';
 
 export const upcomingEvents = [
     {
+        id: 'seeing-data-visualizations-oct1',
+        title: 'Seeing Data Visualizations',
+        date: 'October 1, 2026',
+        time: '12:00 PM - 12:30 PM',
+        location: 'Building 3, Room 2636',
+        type: 'General Meeting',
+        iconType: 'SchoolIcon',
+        image: '/fall26_gm5-seeing_data_visualizations.png',
+        description: "Join us for a quick meeting on common data visualizations! Data is typically hard to interpret and comprehend, but visualizations help make patterns easier to find and and understand!",
+        registrationLink: '#',
+        semester: "Fall '26"
+    },
+    
+
+];
+
+export const pastEvents = [
+    {
         id: 'intro-to-deep-learning-sep17',
         title: 'Intro to Deep Learning',
         date: 'September 17, 2026',
@@ -17,11 +35,6 @@ export const upcomingEvents = [
         registrationLink: '#',
         semester: "Fall '26"
     },
-    
-
-];
-
-export const pastEvents = [
     {
         id: 'intro-to-python-sep10',
         title: 'Introduction to Python + Libraries',
