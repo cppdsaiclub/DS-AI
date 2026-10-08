@@ -5,6 +5,19 @@ import { parseEventDateTime } from '../utils/eventHelpers';
 
 export const upcomingEvents = [
     {
+        id: 'intro-to-reus-oct8',
+        title: 'Introduction to REUs',
+        date: 'October 8, 2026',
+        time: '12:00 PM - 1:00 PM',
+        location: 'Building 3, Room 2636',
+        type: 'General Meeting',
+        iconType: 'SchoolIcon',
+        image: '/fall26_gm6-intro_to_REUs.png',
+        description: "Troubled thoughts about not getting internships? Worried that you're not getting enough experience? Join us for an introduction to Research Experience for Undergraduates (REUs)!",
+        registrationLink: '#',
+        semester: "Fall '26"
+    },
+    {
         id: 'seeing-data-visualizations-oct1',
         title: 'Seeing Data Visualizations',
         date: 'October 1, 2026',
