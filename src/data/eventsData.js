@@ -5,6 +5,25 @@ import { parseEventDateTime } from '../utils/eventHelpers';
 
 export const upcomingEvents = [
     {
+        id: 'pandoras-box-oct15',
+        title: 'Pandora\'s Box Keynote',
+        date: 'October 15, 2026',
+        time: '12:00 PM - 1:00 PM',
+        location: 'Building 3, Room 2636',
+        type: 'General Meeting',
+        iconType: 'SchoolIcon',
+        image: '/fall26_gm7-pandoras_box.png',
+        description: "With the development of GenAI, it has already caused a great upheaval for our society. However, now it has also developed significantly in regard to cybersecurity. Join us for a keynote of a development we may not be ready for.",
+        registrationLink: '#',
+        semester: "Fall '26"
+    },
+    
+    
+
+];
+
+export const pastEvents = [
+    {
         id: 'intro-to-reus-oct8',
         title: 'Introduction to REUs',
         date: 'October 8, 2026',
@@ -30,11 +49,6 @@ export const upcomingEvents = [
         registrationLink: '#',
         semester: "Fall '26"
     },
-    
-
-];
-
-export const pastEvents = [
     {
         id: 'intro-to-deep-learning-sep17',
         title: 'Intro to Deep Learning',
