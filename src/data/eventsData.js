@@ -5,6 +5,32 @@ import { parseEventDateTime } from '../utils/eventHelpers';
 
 export const upcomingEvents = [
     {
+        id: 'need-4-data-datathon-nov2',
+        title: 'Need 4 Data',
+        date: 'November 2 – 6, 2026',
+        time: 'November 2 – November 6, 2026',
+        location: 'Building 6, Room 113',
+        type: 'Datathon',
+        iconType: 'EmojiEventsIcon',
+        image: '/fall26_datathon-need_for_data_datathon.png',
+        description: "Ready to get under the hood of real-world data and take your skills for a spin? Looking to create something resume-worthy, connect with your peers, and more? Need 4 Data (NFD), is our upcoming multi-day data competition where teams will analyze a dataset, work together, uncover key insights, present your findings, and compete for a chance to win prizes.",
+        registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSd3unssr4OxIf7bjlPyapD0JW_zwZF_HV3UQHyFwluRXjagcg/viewform?usp=dialog',
+        semester: "Fall '26"
+    },
+    {
+        id: 'datathons-explained-oct22',
+        title: 'Datathons Explained',
+        date: 'October 22, 2026',
+        time: '12:00 PM - 1:00 PM',
+        location: 'Building 3, Room 2636',
+        type: 'General Meeting',
+        iconType: 'SchoolIcon',
+        image: '/fall26_gm8-datathons_explained.png',
+        description: "What is a datathon? How do you prepare for one? What are the benefits of participating in one? Join us for a general meeting where we go over the basics of datathons and how to get involved in them!",
+        registrationLink: '#',
+        semester: "Fall '26"
+    },
+    {
         id: 'pandoras-box-oct15',
         title: 'Pandora\'s Box Keynote',
         date: 'October 15, 2026',
