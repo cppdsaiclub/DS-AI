@@ -5,6 +5,24 @@ import { parseEventDateTime } from '../utils/eventHelpers';
 
 export const upcomingEvents = [
     {
+        id: 'datathon-feedback-nov12',
+        title: 'Datathon Feedback',
+        date: 'November 12, 2026',
+        time: '12:00 PM - 1:00 PM',
+        location: 'Building 3, Room 2636',
+        type: 'General Meeting',
+        iconType: 'SchoolIcon',
+        image: '/fall26_gm9-post_datathon.png',
+        description: "What happened in our datathon? Join us for a general meeting where we share feedback and key takeaways from the Need 4 Data datathon!",
+        registrationLink: '#',
+        semester: "Fall '26"
+    },
+    
+
+];
+
+export const pastEvents = [
+    {
         id: 'need-4-data-datathon-nov2',
         title: 'Need 4 Data',
         date: 'November 2 – 6, 2026',
@@ -14,7 +32,7 @@ export const upcomingEvents = [
         iconType: 'EmojiEventsIcon',
         image: '/fall26_datathon-need_for_data_datathon.png',
         description: "Ready to get under the hood of real-world data and take your skills for a spin? Looking to create something resume-worthy, connect with your peers, and more? Need 4 Data (NFD), is our upcoming multi-day data competition where teams will analyze a dataset, work together, uncover key insights, present your findings, and compete for a chance to win prizes.",
-        registrationLink: 'https://docs.google.com/forms/d/e/1FAIpQLSd3unssr4OxIf7bjlPyapD0JW_zwZF_HV3UQHyFwluRXjagcg/viewform?usp=dialog',
+        registrationLink: '#', // manually removed link, maybe in future have it be removed upon it passing date?
         semester: "Fall '26"
     },
     {
@@ -43,12 +61,6 @@ export const upcomingEvents = [
         registrationLink: '#',
         semester: "Fall '26"
     },
-    
-    
-
-];
-
-export const pastEvents = [
     {
         id: 'intro-to-reus-oct8',
         title: 'Introduction to REUs',
